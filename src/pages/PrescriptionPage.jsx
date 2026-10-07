@@ -121,6 +121,48 @@ export default function PrescriptionPage() {
             </div>
           </section>
 
+          {/* ---------- 체류 이후 다음 단계 ---------- */}
+          <section className="card next-steps">
+            <p className="section-eyebrow">한 달 이후, 다음 단계</p>
+            <h2>쉼으로 시작해, 원하면 더 머물 수 있어요</h2>
+            <ol className="next-list">
+              <li className="done">
+                <span className="next-key">쉼</span>
+                <div>
+                  <strong>처방 받기</strong>
+                  <p className="small muted">지금 이 단계예요. {region.name}에서 회복의 한 달을 시작해 보세요.</p>
+                </div>
+              </li>
+              <li>
+                <span className="next-key">체류</span>
+                <div>
+                  <strong>한 달 머물기</strong>
+                  <p className="small muted">위 지원 사업으로 숙박비·체험비 부담을 덜고, 이 지역의 생활인구가 돼요.</p>
+                </div>
+              </li>
+              <li>
+                <span className="next-key">관계</span>
+                <div>
+                  <strong>후기 남기고 다시 찾기</strong>
+                  <p className="small muted">
+                    <Link to="/community" className="underline">처방 후기</Link>로 경험을 나누면, 다음 사람의 처방이
+                    더 정확해져요.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span className="next-key">정착</span>
+                <div>
+                  <strong>더 살아 보고 싶다면</strong>
+                  <p className="small muted">
+                    청년마을·주거 지원 같은 {region.province} 정착 정책으로 연결해 드릴 예정이에요.{' '}
+                    <SampleBadge label="2단계 예정" />
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
           {/* ---------- AI 판단 근거 ---------- */}
           <section className="card ai-panel">
             <p className="section-eyebrow">{result.mode === 'ai' ? 'AI가 이렇게 판단했어요' : '이렇게 판단했어요'}</p>

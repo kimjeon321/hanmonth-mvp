@@ -425,6 +425,46 @@ main { min-height: calc(100vh - var(--topbar-h) - 60px); }
 .roadmap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .roadmap h3 { margin-top: 8px; }
 
+/* 소멸위험 추이 */
+.trend-line { display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 0.8rem; color: var(--text-2); margin: 4px 0 8px; }
+.trend-line > span { white-space: nowrap; }
+.trend-arrow { margin: 0 4px; color: var(--muted); }
+.trend-now strong { color: #c2410c; }
+
+.section-lead { color: var(--text-2); margin: -8px 0 20px; max-width: 760px; }
+
+/* 쉼 → 체류 → 관계 → 정착 */
+.journey { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.journey-step {
+  position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px;
+  padding: 18px 12px; background: var(--surface); border: 1px solid var(--border);
+}
+.journey-step:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+.journey-step:last-child { border-radius: 0 var(--radius) var(--radius) 0; }
+.journey-step + .journey-step { border-left: none; }
+.journey-step + .journey-step::before {
+  content: '→'; position: absolute; left: -10px; top: 50%; transform: translateY(-50%);
+  width: 20px; height: 20px; display: grid; place-items: center; border-radius: 50%;
+  background: var(--primary); color: #fff; font-size: 0.7rem; font-weight: 800;
+}
+.journey-key { font-size: 1.4rem; font-weight: 800; color: var(--primary); }
+.journey-step.s0 { background: var(--primary); border-color: var(--primary); color: #fff; }
+.journey-step.s0 .journey-key { color: #fff; }
+.journey-step .small { color: inherit; opacity: 0.85; }
+
+/* 처방전: 다음 단계 */
+.next-list { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-direction: column; gap: 0; }
+.next-list li { display: grid; grid-template-columns: 52px 1fr; gap: 12px; position: relative; padding-bottom: 14px; }
+.next-list li:not(:last-child)::after {
+  content: ''; position: absolute; left: 25px; top: 44px; bottom: 0; width: 2px; background: var(--border);
+}
+.next-list p { margin: 2px 0 0; }
+.next-key {
+  display: grid; place-items: center; width: 52px; height: 40px; border-radius: 10px;
+  background: var(--hover); color: var(--muted); font-weight: 800; font-size: 0.85rem;
+}
+.next-list li.done .next-key { background: var(--primary); color: #fff; }
+
 /* ===== 진단 ===== */
 .progress { height: 8px; border-radius: 4px; background: var(--hover); overflow: hidden; margin-bottom: 6px; }
 .progress div { height: 100%; background: var(--primary); transition: width 0.3s; }
@@ -596,6 +636,10 @@ main { min-height: calc(100vh - var(--topbar-h) - 60px); }
   .section { margin: 40px 0; }
   .section-title { font-size: 1.25rem; }
   .why-grid, .effect-grid, .roadmap { grid-template-columns: 1fr; }
+  .journey { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .journey-step { border-radius: var(--radius) !important; border: 1px solid var(--border) !important; }
+  .journey-step.s0 { border-color: var(--primary) !important; }
+  .journey-step + .journey-step::before { display: none; }
   .counter-band strong { font-size: 1.2rem; }
   .compare-table th, .compare-table td { padding: 8px; font-size: 0.85rem; }
 

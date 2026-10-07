@@ -11,6 +11,15 @@ const COMPARISON = [
   { item: '지역 추천 기준', old: '인기·광고 순위', ours: '취향 + 자격 조건 + 지역 필요도' },
   { item: '추천 이유 설명', old: '없음', ours: '점수 구성까지 공개' },
   { item: '지역(지자체) 입장', old: '공고만 올리고 끝', ours: '공고문 → AI 구조화 → 맞는 청년에게 자동 매칭' },
+  { item: '홍보 방식', old: '참가자에게 SNS 후기 의무', ours: '처방전 카드를 스스로 공유' },
+  { item: '체류 이후', old: '체험으로 끝', ours: '후기 · 재방문 · 정착 정책으로 연결' },
+];
+
+const JOURNEY = [
+  { step: '쉼', title: '처방', text: '번아웃 진단으로 부담 없이 시작' },
+  { step: '체류', title: '생활인구', text: '한 달 머물며 지역의 인구가 됨' },
+  { step: '관계', title: '후기 · 재방문', text: '경험을 나누고 다시 찾음' },
+  { step: '정착', title: '정착 정책 연결', text: '더 살고 싶은 사람은 다음 단계로' },
 ];
 
 const EFFECTS = [
@@ -27,7 +36,7 @@ const ROADMAP = [
 
 export default function HomePage() {
   const connected = getConnectedCount();
-  const { extinction, decliningAreas, livingPopulation } = stats;
+  const { extinction, decliningAreas, livingPopulation, trend } = stats;
 
   return (
     <div className="home">
@@ -61,6 +70,16 @@ export default function HomePage() {
               </p>
               <h3>전국 {extinction.total}개 시군구 중 {extinction.atRisk}곳이 소멸위험</h3>
               <ExtinctionGrid total={extinction.total} atRisk={extinction.atRisk} />
+              <p className="trend-line">
+                {trend.points.map((p, i) => (
+                  <span key={p.year}>
+                    {i > 0 && <span className="trend-arrow">→</span>}
+                    <span className={i === trend.points.length - 1 ? 'trend-now' : ''}>
+                      {p.year}년 <strong>{p.count}곳</strong>
+                    </span>
+                  </span>
+                ))}
+              </p>
               <p className="muted small">
                 출처:{' '}
                 <a href={extinction.url} target="_blank" rel="noreferrer" className="underline">
@@ -106,6 +125,26 @@ export default function HomePage() {
               </p>
             </article>
           </div>
+        </section>
+
+        {/* ---------- 왜 '쉼'인가 ---------- */}
+        <section className="section">
+          <p className="section-eyebrow">왜 이주 청년이 아니라 '쉼이 필요한 청년'인가</p>
+          <h2 className="section-title">정착을 권하기 전에, 먼저 머물게 합니다</h2>
+          <p className="section-lead">
+            이주를 고민하는 청년은 이미 스스로 정책을 찾아요. 정책을 모르는 더 많은 청년에게 닿으려면 문턱이
+            낮아야 합니다. 생활인구 제도에서는 <strong>머무는 것만으로도 지역의 인구</strong>가 되기 때문에, 쉼은
+            지방소멸 대응의 가장 넓은 입구가 됩니다.
+          </p>
+          <ol className="journey">
+            {JOURNEY.map((j, i) => (
+              <li key={j.step} className={`journey-step s${i}`}>
+                <span className="journey-key">{j.step}</span>
+                <strong>{j.title}</strong>
+                <span className="small">{j.text}</span>
+              </li>
+            ))}
+          </ol>
         </section>
 
         {/* ---------- 기존 서비스와의 차이 ---------- */}

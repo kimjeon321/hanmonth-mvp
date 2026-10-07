@@ -1,0 +1,196 @@
+[
+  {
+    "id": "yy-p1",
+    "regionId": "yangyang",
+    "type": "맛집",
+    "name": "양양전통시장",
+    "category": "시장",
+    "description": "4·9일 오일장이 서는 시장. 수수부꾸미와 메밀전병이 별미",
+    "rating": 4.4,
+    "reviews": [
+      { "author": "파도타는중", "rating": 5, "text": "장날 구경하는 재미로 한 달에 여섯 번 갔어요." }
+    ]
+  },
+  {
+    "id": "yy-p2",
+    "regionId": "yangyang",
+    "type": "맛집",
+    "name": "죽도해변 카페 거리",
+    "category": "카페",
+    "description": "서퍼들이 모이는 해변 앞 카페와 브런치 가게",
+    "rating": 4.5,
+    "reviews": [
+      { "author": "노마드K", "rating": 5, "text": "오전 서핑, 오후엔 여기서 노트북 작업했어요." }
+    ]
+  },
+  {
+    "id": "yy-p3",
+    "regionId": "yangyang",
+    "type": "명소",
+    "name": "서피비치",
+    "category": "자연",
+    "description": "서핑 강습과 해변 휴식을 함께 즐기는 전용 해변",
+    "rating": 4.6,
+    "reviews": [
+      { "author": "첫보드", "rating": 5, "text": "완전 초보도 일주일이면 일어설 수 있어요!" },
+      { "author": "바다멍", "rating": 4, "text": "주말엔 붐비니 평일 아침을 추천해요." }
+    ]
+  },
+  {
+    "id": "yy-p4",
+    "regionId": "yangyang",
+    "type": "명소",
+    "name": "낙산사",
+    "category": "문화",
+    "description": "동해 일출 명소이자 바다 절벽 위 천년 고찰",
+    "rating": 4.7,
+    "reviews": [
+      { "author": "새벽형인간", "rating": 5, "text": "의상대에서 본 일출에 마음이 정리됐어요." }
+    ]
+  },
+  {
+    "id": "nh-p1",
+    "regionId": "namhae",
+    "type": "맛집",
+    "name": "미조항 멸치쌈밥집",
+    "category": "향토음식",
+    "description": "남해 특산 멸치로 만든 멸치쌈밥과 멸치회무침",
+    "rating": 4.5,
+    "reviews": [
+      { "author": "섬마을", "rating": 5, "text": "멸치쌈밥은 남해 와서 꼭 먹어야 해요." }
+    ]
+  },
+  {
+    "id": "nh-p2",
+    "regionId": "namhae",
+    "type": "명소",
+    "name": "다랭이마을",
+    "category": "자연",
+    "description": "바다를 향해 계단처럼 이어진 논이 아름다운 마을",
+    "rating": 4.8,
+    "reviews": [
+      { "author": "느린걸음", "rating": 5, "text": "아침 안개 낀 다랭이논은 정말 그림 같아요." },
+      { "author": "등산초보", "rating": 4, "text": "경사가 있어 편한 신발 필수!" }
+    ]
+  },
+  {
+    "id": "nh-p3",
+    "regionId": "namhae",
+    "type": "명소",
+    "name": "남해 바래길",
+    "category": "자연",
+    "description": "해안과 마을을 잇는 도보 여행길",
+    "rating": 4.7,
+    "reviews": [
+      { "author": "걷는사람", "rating": 5, "text": "한 달 동안 코스를 하나씩 완주하는 재미가 있어요." }
+    ]
+  },
+  {
+    "id": "nh-p4",
+    "regionId": "namhae",
+    "type": "명소",
+    "name": "독일마을",
+    "category": "문화",
+    "description": "파독 광부·간호사의 역사가 담긴 이국적인 마을",
+    "rating": 4.3,
+    "reviews": [
+      { "author": "여행가J", "rating": 4, "text": "전시관에서 이야기를 듣고 나니 더 의미 있었어요." }
+    ]
+  },
+  {
+    "id": "gj-p1",
+    "regionId": "gangjin",
+    "type": "맛집",
+    "name": "강진 한정식 거리",
+    "category": "향토음식",
+    "description": "한 상 가득 차려지는 남도 한정식",
+    "rating": 4.7,
+    "reviews": [
+      { "author": "밥심회복", "rating": 5, "text": "반찬 수에 놀라고 맛에 또 놀랐어요." }
+    ]
+  },
+  {
+    "id": "gj-p2",
+    "regionId": "gangjin",
+    "type": "맛집",
+    "name": "마량항 토요 수산시장",
+    "category": "시장",
+    "description": "토요일마다 열리는 항구 수산시장과 공연",
+    "rating": 4.4,
+    "reviews": [
+      { "author": "주말장터", "rating": 4, "text": "회 사서 바로 앞에서 먹을 수 있어요." }
+    ]
+  },
+  {
+    "id": "gj-p3",
+    "regionId": "gangjin",
+    "type": "명소",
+    "name": "다산초당",
+    "category": "문화",
+    "description": "정약용이 유배 시절 머물며 책을 쓴 곳",
+    "rating": 4.6,
+    "reviews": [
+      { "author": "생각정리", "rating": 5, "text": "숲길을 오르며 생각이 차분해졌어요." }
+    ]
+  },
+  {
+    "id": "gj-p4",
+    "regionId": "gangjin",
+    "type": "명소",
+    "name": "가우도 출렁다리",
+    "category": "자연",
+    "description": "강진만 위를 걸어서 건너는 작은 섬",
+    "rating": 4.5,
+    "reviews": [
+      { "author": "산책왕", "rating": 5, "text": "해 질 녘 다리 위 풍경이 최고예요." }
+    ]
+  },
+  {
+    "id": "dy-p1",
+    "regionId": "danyang",
+    "type": "맛집",
+    "name": "단양구경시장",
+    "category": "시장",
+    "description": "흑마늘 닭강정과 마늘 순대로 유명한 시장",
+    "rating": 4.5,
+    "reviews": [
+      { "author": "먹방러", "rating": 5, "text": "마늘 닭강정은 포장해서 숙소에서도 먹었어요." }
+    ]
+  },
+  {
+    "id": "dy-p2",
+    "regionId": "danyang",
+    "type": "맛집",
+    "name": "마늘정식 골목",
+    "category": "향토음식",
+    "description": "단양 육쪽마늘로 만든 정식 한 상",
+    "rating": 4.3,
+    "reviews": [
+      { "author": "건강식", "rating": 4, "text": "생각보다 맵지 않고 고소해요." }
+    ]
+  },
+  {
+    "id": "dy-p3",
+    "regionId": "danyang",
+    "type": "명소",
+    "name": "도담삼봉",
+    "category": "자연",
+    "description": "남한강 위에 솟은 세 개의 봉우리",
+    "rating": 4.6,
+    "reviews": [
+      { "author": "강멍", "rating": 5, "text": "아침 물안개가 낀 날 꼭 가 보세요." }
+    ]
+  },
+  {
+    "id": "dy-p4",
+    "regionId": "danyang",
+    "type": "명소",
+    "name": "만천하스카이워크",
+    "category": "체험",
+    "description": "남한강 절벽 위 전망대와 짚와이어",
+    "rating": 4.5,
+    "reviews": [
+      { "author": "자극필요", "rating": 4, "text": "무기력할 때 이런 자극이 은근히 도움 돼요." }
+    ]
+  }
+]

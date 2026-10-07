@@ -1,0 +1,21 @@
+{
+  "extinction": {
+    "total": 228,
+    "atRisk": 130,
+    "percent": 57,
+    "source": "한국고용정보원 「지역산업과 고용」 2024 여름호, 「지방소멸 2024: 광역대도시로 확산하는 소멸위험」(2024년 3월 주민등록인구 기준)",
+    "url": "https://www.keis.or.kr/keis/ko/bbs/145/detail.do?pstSn=63579"
+  },
+  "decliningAreas": {
+    "count": 89,
+    "source": "행정안전부 인구감소지역 지정 (2021년 10월)"
+  },
+  "livingPopulation": {
+    "definition": "주민등록인구 + 체류인구(통근·통학·관광 등으로 월 1회, 하루 3시간 이상 머무는 사람)",
+    "source": "「인구감소지역 지원 특별법」(2023 시행)"
+  },
+  "counter": {
+    "base": 1284,
+    "note": "시연용 샘플 기준값 + 이 브라우저에서 받은 처방 수"
+  }
+}

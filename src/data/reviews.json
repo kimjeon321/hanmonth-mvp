@@ -1,0 +1,47 @@
+[
+  {
+    "id": "r1",
+    "regionId": "namhae",
+    "burnoutType": "drained",
+    "author": "느린하루",
+    "date": "2026-07-28",
+    "rating": 5,
+    "content": "방전형 처방으로 '국민쉼터 남해에서 한 달 살기'에 다녀왔어요. 처음 일주일은 정말 잠만 잤고, 둘째 주부터 바래길을 걷기 시작했어요. 매일 SNS에 기록 남기는 게 오히려 하루를 정리하는 루틴이 됐습니다."
+  },
+  {
+    "id": "r2",
+    "regionId": "yangyang",
+    "burnoutType": "overheated",
+    "author": "원격근무자",
+    "date": "2026-09-22",
+    "rating": 5,
+    "content": "회사 메신저에서 벗어나는 게 목표였는데, 바다에 들어가 있는 동안은 핸드폰을 볼 수가 없더라고요 😂 양양군 무료 서핑캠프로 처음 보드에 올라 봤어요."
+  },
+  {
+    "id": "r3",
+    "regionId": "gangjin",
+    "burnoutType": "isolated",
+    "author": "밥심회복",
+    "date": "2026-08-28",
+    "rating": 5,
+    "content": "혼자 밥 먹는 게 일상이었는데, 시장이랑 식당에서 말 걸어 주시는 분들이 많아서 좋았어요. 반값여행 사전 신청해 두니 쓴 돈의 절반을 강진 상품권으로 돌려받았습니다."
+  },
+  {
+    "id": "r4",
+    "regionId": "danyang",
+    "burnoutType": "stuck",
+    "author": "이직준비중",
+    "date": "2025-07-20",
+    "rating": 4,
+    "content": "진로 고민으로 머리가 꽉 막혀 있었는데, 단양에서 일주일살기 하면서 남한강 따라 걷고 패러글라이딩까지 해 보니 생각이 단순해졌어요. 후기 과제는 꼭 챙기세요."
+  },
+  {
+    "id": "r5",
+    "regionId": "namhae",
+    "burnoutType": "isolated",
+    "author": "도시탈출",
+    "date": "2026-07-10",
+    "rating": 4,
+    "content": "밤에 별이 정말 많이 보여요. 편의시설은 적지만 마을 분들이 먼저 인사해 주셔서 생각보다 외롭지 않았어요."
+  }
+]

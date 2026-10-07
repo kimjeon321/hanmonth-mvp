@@ -1,0 +1,88 @@
+[
+  {
+    "id": "age",
+    "title": "나이대를 알려주세요",
+    "hint": "받을 수 있는 지원 정책을 찾는 데 사용해요",
+    "options": [
+      { "label": "20~24세", "age": 22 },
+      { "label": "25~29세", "age": 27 },
+      { "label": "30~34세", "age": 32 },
+      { "label": "35~39세", "age": 37 },
+      { "label": "40세 이상", "age": 42 }
+    ]
+  },
+  {
+    "id": "status",
+    "title": "지금 어떤 상황인가요?",
+    "hint": "정책마다 지원 대상이 달라요",
+    "options": [
+      { "label": "회사에 다니고 있어요", "group": "직장인", "type": { "overheated": 1 } },
+      { "label": "프리랜서·원격근무 중이에요", "group": "프리랜서", "pref": { "work": 2 } },
+      { "label": "구직·이직을 준비하고 있어요", "group": "구직자", "type": { "stuck": 1 } },
+      { "label": "학생이에요", "group": "학생" },
+      { "label": "휴직 중이에요", "group": "휴직자", "type": { "drained": 1 } }
+    ]
+  },
+  {
+    "id": "cause",
+    "title": "요즘 나를 가장 지치게 하는 건?",
+    "options": [
+      { "label": "끝없는 업무와 연락", "type": { "overheated": 3 } },
+      { "label": "이유 없이 계속 피곤하고 무기력함", "type": { "drained": 3 } },
+      { "label": "마음 터놓을 사람이 없음", "type": { "isolated": 3 } },
+      { "label": "앞으로 뭘 해야 할지 모르겠음", "type": { "stuck": 3 } }
+    ]
+  },
+  {
+    "id": "weekend",
+    "title": "지난 주말, 나는 주로…",
+    "options": [
+      { "label": "하루 종일 누워 있었어요", "type": { "drained": 2 } },
+      { "label": "쉬면서도 일 생각, 메시지 확인", "type": { "overheated": 2 } },
+      { "label": "아무도 만나지 않고 집에 있었어요", "type": { "isolated": 2 } },
+      { "label": "뭔가 해야 한다는 불안에 쫓겼어요", "type": { "stuck": 2 } }
+    ]
+  },
+  {
+    "id": "need",
+    "title": "지금 가장 필요한 건?",
+    "options": [
+      { "label": "아무 생각 없이 푹 쉬기", "pref": { "quiet": 3, "nature": 1 }, "type": { "drained": 1 } },
+      { "label": "연락에서 완전히 벗어나기", "pref": { "quiet": 2, "nature": 2 }, "type": { "overheated": 1 } },
+      { "label": "새로운 사람들과 이야기하기", "pref": { "culture": 3 }, "type": { "isolated": 1 } },
+      { "label": "해 보지 않은 새로운 경험", "pref": { "activity": 2, "culture": 1 }, "type": { "stuck": 1 } }
+    ]
+  },
+  {
+    "id": "landscape",
+    "title": "마음이 끌리는 풍경은?",
+    "options": [
+      { "label": "🌊 탁 트인 바다", "landscape": "sea" },
+      { "label": "⛰️ 산과 강", "landscape": "mountain" },
+      { "label": "🌾 논밭과 시골 마을", "landscape": "village" },
+      { "label": "어디든 좋아요", "landscape": null }
+    ]
+  },
+  {
+    "id": "activity",
+    "title": "한 달 동안 가장 해 보고 싶은 건?",
+    "options": [
+      { "label": "🍚 현지 맛집 탐방", "pref": { "food": 3 } },
+      { "label": "🌿 산책·트레킹으로 자연 즐기기", "pref": { "nature": 3 } },
+      { "label": "🏄 서핑·패러글라이딩 같은 레저", "pref": { "activity": 3 } },
+      { "label": "🤝 마을 사람들과 교류", "pref": { "culture": 3 } },
+      { "label": "💻 일하면서 쉬기 (워케이션)", "pref": { "work": 3 } }
+    ]
+  },
+  {
+    "id": "budget",
+    "title": "한 달 생활비 예산은?",
+    "hint": "숙박 지원을 받으면 부담이 크게 줄어요",
+    "options": [
+      { "label": "80만 원 이하", "pref": { "cost": 4 } },
+      { "label": "80~120만 원", "pref": { "cost": 2 } },
+      { "label": "120~160만 원", "pref": { "cost": 1 } },
+      { "label": "크게 상관없어요", "pref": { "cost": 0 } }
+    ]
+  }
+]

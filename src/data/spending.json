@@ -1,0 +1,16 @@
+{
+  "source": "시연용 샘플 (실제 서비스에서는 한국관광 데이터랩 '관광 소비 지출' 통계로 교체)",
+  "description": "외지인 카드 소비액 중 업종별 비율(%)을 가공한 값입니다. 각 지역의 네 값을 더하면 100입니다.",
+  "categories": {
+    "food": "음식",
+    "shopping": "쇼핑",
+    "nature": "자연",
+    "culture": "문화"
+  },
+  "regions": {
+    "yangyang": { "food": 34, "shopping": 14, "nature": 40, "culture": 12 },
+    "namhae": { "food": 30, "shopping": 10, "nature": 45, "culture": 15 },
+    "gangjin": { "food": 45, "shopping": 11, "nature": 22, "culture": 22 },
+    "danyang": { "food": 31, "shopping": 13, "nature": 38, "culture": 18 }
+  }
+}

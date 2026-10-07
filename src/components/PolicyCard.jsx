@@ -1,5 +1,6 @@
 // 지원 사업 카드. compact=true면 지도 화면용 짧은 버전, eligible=true면 "자격 충족" 표시
-// 모든 사업은 출처 링크와 모집 상태를 함께 보여줍니다.
+// 모든 사업은 공식 신청·공고 페이지 링크와 모집 상태를 함께 보여줍니다.
+// (policy.source의 기사 링크는 데이터 확인용으로만 남겨 둡니다)
 export default function PolicyCard({ policy, compact = false, eligible = false }) {
   return (
     <div className={`policy-card ${eligible ? 'eligible' : ''}`}>
@@ -33,12 +34,15 @@ export default function PolicyCard({ policy, compact = false, eligible = false }
           )}
         </dl>
       )}
-      <p className="source small">
-        출처:{' '}
-        <a href={policy.source.url} target="_blank" rel="noreferrer">
-          {policy.source.name} ↗
+      <div className="apply-row">
+        <a className="apply-link" href={policy.apply.url} target="_blank" rel="noreferrer">
+          신청·공고 보기 ↗
         </a>
-      </p>
+        <span className="small muted">
+          {policy.apply.name}
+          {policy.apply.hint && ` · ${policy.apply.hint}`}
+        </span>
+      </div>
     </div>
   );
 }

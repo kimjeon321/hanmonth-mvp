@@ -549,8 +549,17 @@ main { min-height: calc(100vh - var(--topbar-h) - 60px); }
 .policy-card .status { font-weight: 700; white-space: nowrap; }
 .policy-card .status.open { color: var(--primary); }
 .policy-card .status.closed { color: #9a6b00; }
-.policy-card .source { margin: 6px 0 0; color: var(--muted); }
-.policy-card .source a { text-decoration: underline; }
+.apply-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.apply-link {
+  flex-shrink: 0;
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.apply-link:hover { background: var(--primary-soft); }
 .ok-mark { color: var(--primary); }
 
 .living { background: #fffaf5; border-color: #fde3cc; }
